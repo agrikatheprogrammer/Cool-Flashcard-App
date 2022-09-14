@@ -3,31 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="wrap_content"
     app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/flashcard_question"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="#FF0000"
         android:gravity="center"
-        android:text="Who is the 44th President of the United States?"
+        android:text="Imagine you are in a sinking rowboat surrounded by sharks. How would you survive?"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="33sp"
         android:visibility="visible" />
 
     <TextView
         android:id="@+id/flashcard_answer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_below="@+id/flashcard_question"
         android:background="#0000FF"
         android:gravity="center"
-        android:text="Barack Obama"
+        android:text="Stop imagining."
         android:textColor="@color/white"
         android:textSize="40sp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
 </RelativeLayout>
