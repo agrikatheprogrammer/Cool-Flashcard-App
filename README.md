@@ -6,6 +6,7 @@
 
 ### App Description
 This app displays a question; to get the answer, simply tap on the question. (toggle visibility)
+
 The correct answer will be displayed on the screen once an option is selected. (multiple choice question)
 
 ### App Walk-through (toggle visibility)
