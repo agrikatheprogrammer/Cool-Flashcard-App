@@ -8,7 +8,7 @@
 This app displays a question and the answer has to be selected. The correct answer will be displayed on the screen once an option is selected.
 
 ### App Walk-though
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://recordit.co/OOsBRDOjzE" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
