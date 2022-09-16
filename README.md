@@ -16,7 +16,7 @@ The correct answer will be displayed on the screen once an option is selected. (
 <img src="http://g.recordit.co/po7LFdvaj3.gif" width=200><br>
 
 ### App Walk-through (toggle visibility of MCQ options with an eye icon)
-<img src="http://g.recordit.co/fAYvyvjyPt.gif" width=200><br>
+<img src="http://g.recordit.co/U1dHGG7blG.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
