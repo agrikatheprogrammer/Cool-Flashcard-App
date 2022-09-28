@@ -25,7 +25,6 @@ or creates a new card (i.e. saves the changes).
 - [x] User can also enter multiple choice answers when creating a card
 - [x] App is further styled and customized!
 
------------------------------------------------------------------------------------------------------------------------------
 
 ## Lab 1
 
