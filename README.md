@@ -9,6 +9,8 @@ or creates a new card (i.e. saves the changes).
 
 ### App Walk-through
 
+<img src="http://g.recordit.co/9TGO8Rte8f.gif" width=200><br>
+
 <img src="http://g.recordit.co/eAC4O47LU2.gif" width=200><br>
 
 ## Required
