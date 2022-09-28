@@ -36,14 +36,14 @@ This app displays a question; to get the answer, simply tap on the question. To 
 
 The correct answer will be displayed on the screen once an option is selected. (multiple choice question)
 
-### App Walk-through (toggle visibility)
-<img src="http://g.recordit.co/OOsBRDOjzE.gif" width=200><br>
-
 ### App Walk-through (multiple choice question)
 <img src="http://g.recordit.co/po7LFdvaj3.gif" width=200><br>
 
 ### App Walk-through (toggle visibility of MCQ options with an eye icon)
 <img src="http://g.recordit.co/U1dHGG7blG.gif" width=200><br>
+
+### App Walk-through (toggle visibility)
+<img src="http://g.recordit.co/OOsBRDOjzE.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
