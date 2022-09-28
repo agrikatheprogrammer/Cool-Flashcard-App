@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_alignParentEnd="true"
+android:src="@drawable/cancel__vector"
+android:id="@+id/cancel_button"
+android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/saveme"
+        android:id="@+id/save_button"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:hint="Enter the question here"
+        android:id="@+id/questionedittext"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/questionedittext"
+        android:id="@+id/answeredittext"
+        android:layout_margin="20dp"
+        android:hint="Enter the correct answer here" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/answeredittext"
+        android:id="@+id/answer2edittext"
+        android:layout_margin="20dp"
+        android:hint="Enter a wrong answer here" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/answer2edittext"
+        android:id="@+id/answer3edittext"
+        android:layout_margin="20dp"
+        android:hint="Enter another wrong answer here" />
+
+
+</RelativeLayout>
