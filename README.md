@@ -1,9 +1,13 @@
 ## Cool Flashcard App
 
+-----------------------------------------------------------------------------------------------------------------------------
+
 ## Lab 2
 
 ### App Description
-`TODO://`
+User can edit the existing card or create a brand new card. User is prompted with Snackbar messages for input validation
+to ensure no field is set to a null or empty value. A Toast message is shown when user successfully edits an existing card
+or creates a new card (i.e. saves the changes).
 
 ### App Walk-through
 
