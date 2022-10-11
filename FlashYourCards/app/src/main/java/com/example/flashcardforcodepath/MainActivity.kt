@@ -11,9 +11,14 @@ import com.google.android.material.snackbar.Snackbar
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
+    lateinit var flashcardDatabase: FlashcardDatabase
+    var allFlashcards=mutableListOf<Flashcard>()
+    var currentCardIndex =0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        flashcardDatabase = FlashcardDatabase(this)
+        allFlashcards = flashcardDatabase.getAllCards().toMutableList()
 
         val flashcardQuestion = findViewById<TextView>(R.id.flashcard_question)
         val flashcardAnswer = findViewById<TextView>(R.id.flashcard_answer)
@@ -21,6 +26,14 @@ class MainActivity : AppCompatActivity() {
         val flashcardAns3 = findViewById<TextView>(R.id.flashcard_answer3)
         val EYE = findViewById<ImageView>(R.id.eye)
         val DASHEDEYE = findViewById<ImageView>(R.id.dashedeye)
+
+        if (allFlashcards.size > 0) {
+            flashcardQuestion.text = allFlashcards[0].question
+            flashcardAnswer.text = allFlashcards[0].answer
+            flashcardAns2.text=allFlashcards[0].wrongAnswer1
+            flashcardAns3.text=allFlashcards[0].wrongAnswer2
+        }
+
         flashcardAns2.setOnClickListener {
             flashcardAns2.setBackgroundColor(getResources().getColor(R.color.my_red_color, null))
             flashcardAnswer.setBackgroundColor(getResources().getColor(R.color.my_green_color, null)
@@ -74,6 +87,11 @@ class MainActivity : AppCompatActivity() {
                 flashcardAns2.text=ans2string
                 flashcardAns3.text=ans3string
                 flashcardAnswer.text=ans1string
+
+                if (!questionString.isNullOrEmpty()&&!ans1string.isNullOrEmpty()&&!ans2string.isNullOrEmpty()&&!ans3string.isNullOrEmpty()) {
+                    flashcardDatabase.insertCard(Flashcard(questionString,ans1string,ans2string,ans3string))
+                    allFlashcards=flashcardDatabase.getAllCards().toMutableList()
+                }
             }
         }
 
@@ -89,6 +107,22 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("key3",flashcardAns2.text.toString())
             intent.putExtra("key4",flashcardAns3.text.toString())
             resultLauncher.launch(intent)
+        }
+
+        val next=findViewById<ImageView>(R.id.nextbutton)
+        next.setOnClickListener {
+            if (allFlashcards.isEmpty()) {
+                return@setOnClickListener
+            }
+            currentCardIndex++
+            if (currentCardIndex>=allFlashcards.size) {
+                currentCardIndex=0
+            }
+            allFlashcards=flashcardDatabase.getAllCards().toMutableList()
+            flashcardAnswer.text=allFlashcards[currentCardIndex].answer
+            flashcardAns2.text=allFlashcards[currentCardIndex].wrongAnswer1
+            flashcardAns3.text=allFlashcards[currentCardIndex].wrongAnswer2
+            flashcardQuestion.text=allFlashcards[currentCardIndex].question
         }
     }
 }
