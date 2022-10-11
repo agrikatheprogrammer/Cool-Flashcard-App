@@ -2,7 +2,22 @@
 
 ## Lab 3
 
------------------------------------------------------------------------------------------------------------------------------
+### App Description
+User can create cards and go through them.
+
+### App Walk-though
+
+<img src="http://g.recordit.co/aTvqn42pzx.gif" width=200><br>
+
+## Required
+- [x] User can create a card and still see their created card when the app is relaunched.
+- [x] User can create muliple cards and browse through all created cards
+
+## Optional
+- [ ] User can delete a card and no longer see it in their deck anymore
+- [ ] Flashcards are shown in random order instead of the order they were created in
+- [ ] User can edit a card and see the edit saved when they browse through their deck of cards
+- [ ] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
 
 ## Lab 2
 
@@ -12,6 +27,8 @@ to ensure no field is set to a null or empty value. A Toast message is shown whe
 or creates a new card (i.e. saves the changes).
 
 ### App Walk-through
+
+<img src="http://g.recordit.co/9TGO8Rte8f.gif" width=200><br>
 
 <img src="http://g.recordit.co/eAC4O47LU2.gif" width=200><br>
 
@@ -29,7 +46,6 @@ or creates a new card (i.e. saves the changes).
 - [x] User can also enter multiple choice answers when creating a card
 - [x] App is further styled and customized!
 
------------------------------------------------------------------------------------------------------------------------------
 
 ## Lab 1
 
