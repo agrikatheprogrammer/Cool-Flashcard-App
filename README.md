@@ -10,7 +10,7 @@ Added animations, more styling, Konfetti when right answer is selected, and an i
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/DXUOE754Q3.gif" width=200><br>
+<img src="http://g.recordit.co/GX82LhBmSk.gif" width=200><br>
 
 ## Required
 - [x] User sees a transition animation when going from the main screen to the add card screen.
