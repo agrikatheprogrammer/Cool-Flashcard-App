@@ -16,7 +16,7 @@ Added animations, more styling, Konfetti when right answer is selected, and an i
 
 ## Required
 - [x] User sees a transition animation when going from the main screen to the add card screen.
-- [ ] User sees a reveal animation when the flashcard is tapped and the answer is shown
+- [x] User sees a reveal animation when the eye icon is tapped and the answers are shown
 - [x] User sees flashcards animating in / out when the 'next' button is tapped
 
 ## Optional
