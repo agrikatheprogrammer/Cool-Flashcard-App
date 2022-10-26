@@ -12,8 +12,6 @@ Added animations, more styling, Konfetti when right answer is selected, and an i
 
 <img src="http://g.recordit.co/hYOANdPUaG.gif" width=200><br>
 
-<img src="http://g.recordit.co/eDfmBsrQ0Y.gif" width=200><br>
-
 ## Required
 - [x] User sees a transition animation when going from the main screen to the add card screen.
 - [x] User sees a reveal animation when the eye icon is tapped and the answers are shown
