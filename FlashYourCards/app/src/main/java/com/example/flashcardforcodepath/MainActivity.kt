@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.ViewAnimationUtils
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.EditText
@@ -16,7 +17,6 @@ import nl.dionsegijn.konfetti.core.Party
 import nl.dionsegijn.konfetti.core.Position
 import nl.dionsegijn.konfetti.core.emitter.Emitter
 import nl.dionsegijn.konfetti.xml.KonfettiView
-import org.w3c.dom.Text
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
@@ -100,11 +100,32 @@ class MainActivity : AppCompatActivity() {
             }
         }
         EYE.setOnClickListener {
+            //val answer1SideView = flashcardAns2
+            //val cx1 = answer1SideView.width / 2
+            //val cy1 = answer1SideView.height / 2
+            //val final1Radius = Math.hypot(cx1.toDouble(), cy1.toDouble()).toFloat()
+            //val anim = ViewAnimationUtils.createCircularReveal(answer1SideView, cx1, cy1, 0f, final1Radius)
+            //val answerSideView = flashcardAnswer
+            //val cx = answerSideView.width / 2
+            //val cy = answerSideView.height / 2
+            //val finalRadius = Math.hypot(cx.toDouble(), cy.toDouble()).toFloat()
+            //val anim2 = ViewAnimationUtils.createCircularReveal(answerSideView, cx, cy, 0f, finalRadius)
+            //val answer2SideView = flashcardAns3
+            //val cx2 = answer2SideView.width / 2
+            //val cy2 = answer2SideView.height / 2
+            //val finalRadius2 = Math.hypot(cx2.toDouble(), cy2.toDouble()).toFloat()
+            //val anim3 = ViewAnimationUtils.createCircularReveal(answer2SideView, cx2, cy2, 0f, finalRadius2)
+            //anim.setDuration(3000)
+            //anim2.setDuration(3000)
+            //anim3.setDuration(3000)
             flashcardAns2.visibility = View.VISIBLE
             flashcardAnswer.visibility = View.VISIBLE
             flashcardAns3.visibility = View.VISIBLE
             EYE.visibility = View.INVISIBLE
             DASHEDEYE.visibility = View.VISIBLE
+            //anim.start()
+            //anim2.start()
+            //anim3.start()
         }
 
 
