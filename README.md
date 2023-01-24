@@ -1,5 +1,28 @@
 ## Cool Flashcard App
 
+## Lab 4
+
+### App Description
+A set of flashcards can be created by user with three answer choices, out of which only one is right.
+These flashcards can be edited and saved in the database.
+They can also be removed permanently from the application.
+Added animations, more styling, Konfetti when right answer is selected, and an icon for the app.
+
+### App Walk-though
+
+<img src="http://g.recordit.co/hYOANdPUaG.gif" width=200><br>
+
+## Required
+- [x] User sees a transition animation when going from the main screen to the add card screen.
+- [x] User sees a reveal animation when the eye icon is tapped and the answers are shown
+- [x] User sees flashcards animating in / out when the 'next' button is tapped
+
+## Optional
+- [x] Extra styling is added!
+- [ ] User sees a countdown timer for each question
+- [ ] User sees a 'card flip' animation when the card is tapped
+- [x] User sees a celebration animation with confetti when they answer a question correctly
+
 ## Lab 3
 
 ### App Description
@@ -14,9 +37,9 @@ User can create cards and go through them.
 - [x] User can create muliple cards and browse through all created cards
 
 ## Optional
-- [ ] User can delete a card and no longer see it in their deck anymore
-- [ ] Flashcards are shown in random order instead of the order they were created in
-- [ ] User can edit a card and see the edit saved when they browse through their deck of cards
+- [x] User can delete a card and no longer see it in their deck anymore
+- [x] Flashcards are shown in random order instead of the order they were created in
+- [x] User can edit a card and see the edit saved when they browse through their deck of cards
 - [x] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
 
 ## Lab 2
